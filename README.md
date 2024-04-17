@@ -17,22 +17,20 @@
 Технологии
 
     python = 3.10
-    django = 5.0
+    django = 5.0.4
     psycopg2-binary = 2.9.9
-    pillow = 10.1.0
-    ipython = 8.19.0
+    pillow = 9.0.1
+    ipython = 8.12.13
     djangorestframework = 3.14.0
     djangorestframework-simplejwt = 5.3.1
     drf-yasg = 1.21.7
-    django-cors-headers = 4.3.1
     requests = 2.31.0
     celery = 5.3.6
-    python-dotenv = 1.0.0
-    redis = 5.0.1
-    coverage = 7.4.0
+    python-dotenv = 1.0.1
+    redis = 5.0.3
     flake8 = 7.0.0
-    django-celery-beat = 2.5.0
-    pytest-cov = 4.1.0
+    django-celery-beat = 2.6.0
+    pytest-cov = 5.0.0
 
 Запуск проекта
 
