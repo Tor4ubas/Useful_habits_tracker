@@ -20,7 +20,7 @@ class HabitCreateAPIView(CreateAPIView):
     def perform_create(self, serializer):
         new_habit = serializer.save()
         new_habit.user = self.request.user
-        new_habit.save()
+        new_habit.save(update_fields=['user'])
 
 
 class HabitRetrieveAPIView(RetrieveAPIView):
