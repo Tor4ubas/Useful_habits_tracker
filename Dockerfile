@@ -5,7 +5,7 @@ FROM python:3
 WORKDIR /app
 
 # Копируем зависимости в контейнер
-COPY ./requirements.txt /app/
+COPY requirements.txt /app/
 
 # Устанавливаем зависимости
 RUN pip install -r /app/requirements.txt
