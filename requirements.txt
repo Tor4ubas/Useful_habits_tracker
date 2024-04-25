@@ -28,3 +28,6 @@ thread==2.0.0
 tornado==6.4
 trove_classifiers==2024.4.10
 urllib3==2.2.1
+celery==5.4.0
+
+
