@@ -13,7 +13,7 @@ services:
     env_file:
       - .env.sample
     environment:
-      - POSTGRES_PASSWORD = os.getenv('POSTGRES_PASSWORD'),
+      - POSTGRES_PASSWORD=os.getenv('POSTGRES_PASSWORD')
       - PGDATA=/var/lib/postgresql/data/pgdata
     volumes:
       - pg_data:/var/lib/postgresql/data/pgdata
