@@ -91,11 +91,11 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('POSTGRES_DB'),
-        'USER': os.getenv('POSTGRES_USER'),
-        'PASSWORD': os.getenv('POSTGRES_PASSWORD'),
-        'PORT': os.getenv('POSTGRES_PORT'),
-        'HOST': os.getenv('POSTGRES_HOST'),
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': '12345',
+        'PORT': 5432,
+        'HOST': 'postgresql',
     }
 }
 
@@ -144,14 +144,12 @@ AUTH_USER_MODEL = 'users.User'
 # Настройка JWT-токенов и установка прав по умолчанию права на авторизацию
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework_simplejwt.'
-        'authentication.JWTAuthentication',
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
     ],
     'DEFAULT_PERMISSION_CLASSES': [
-            'rest_framework.permissions.IsAuthenticated',
-        ],
-    'DEFAULT_PAGINATION_CLASS': ['rest_framework.pagination.LimitOffsetPagination'],
-    'PAGE_SIZE': [100],
+        'rest_framework.permissions.IsAuthenticated',
+    ],
+    'PAGE_SIZE': 100,
 }
 
 

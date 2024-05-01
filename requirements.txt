@@ -31,6 +31,10 @@ tornado==6.4
 trove_classifiers==2024.4.10
 urllib3_secure_extra==0.1.0
 attrs==23.2.0
+celery
+django-celery-beat
+django-cors-headers
+psycopg2
 
 
 
